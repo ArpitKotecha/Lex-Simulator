@@ -51,7 +51,7 @@ body {
     padding-left: 300px;
     padding-right: 180px;
     padding-bottom: 0px;
-    min-height: 120vh;
+    min-height: 250vh;
     background: whitesmoke;
 }
 
@@ -119,7 +119,7 @@ body {
     border-radius: 50%;
     position: relative;
     left: 45%;
-    top: 660px;
+    top: 230vh;
     cursor: pointer;
 }
 
@@ -130,7 +130,7 @@ body {
     border-radius: 50%;
     position: relative;
     left: 55%;
-    top: 620px;
+    top: 224vh;
     cursor: pointer;
 }
 
@@ -145,6 +145,28 @@ body {
     background: #222d7d;
 }
 
-.modal2 {
+#text_input {
+    border: 0px;
+    width: 100%;
+    border-radius: 5px;
+    padding-left: 10px;
+}
+
+.modal6,.modal2,.modal3,.modal4,.modal5 {
     display: none;
+}
+
+#mytable {
+    margin-top: 15%;
+}
+
+.result_head {
+    margin-top: 100px;
+}
+
+.pie_chart_display {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    margin: 10px;
 }

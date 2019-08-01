@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
+
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/malihu-custom-scrollbar-plugin/3.1.5/jquery.mCustomScrollbar.min.css">
-    
+    <link rel="stylesheet" href="//cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+
     <title>Lex Simulator</title>
-    </head>
+</head>
+
 <body>
 
     <nav class="navbar navbar-expand-lg navbar-light bg-dark sticky-top">
@@ -29,22 +30,22 @@
         </div>
         <ul class="list-unstyled components">
             <li>
-                <div><a href="#">Background</a></div>
+                <div><a href="#" onclick="open1()">Background</a></div>
             </li>
             <li>
-                <div><a href="#">Control</a></div>
+                <div><a href="#" onclick="open2()">Control</a></div>
             </li>
             <li>
-                <div><a href="#">Preventative actions</a></div>
+                <div><a href="#" onclick="open3()">Preventative actions</a></div>
             </li>
             <li>
-                <div><a href="#">Remedial options</a></div>
+                <div><a href="#" onclick="open4()">Remedial options</a></div>
             </li>
             <li>
-                <div><a href="#">Legislation</a></div>
+                <div><a href="#" onclick="open5()">Legislation</a></div>
             </li>
             <li>
-                <div><a href="#">Result</a></div>
+                <div><a href="#" onclick="open6()">Result</a></div>
             </li>
         </ul>
     </nav>
@@ -54,27 +55,57 @@
         <div class="container content_container">
             <form action="" class="form-control" style="background: whitesmoke;">
                 <div class="form-group">
-                    <div style="width: 600px;">3.4. Did the Director make attempts to verify the corporation's bank
-                        accounts to ensure that the
-                        remittances were made ?</div>
+                    <div style="width: 600px;">1. What is the highest level of education the taxpayer has completed?
+                    </div>
                     <br>
-                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
-                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>High School or less</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Diploma or university degree</span>
+                    </div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Diploma or university degree</span>
+                    </div>
                 </div>
                 <div class="form-group">
-                    <div style="width: 600px;">3.4. Did the Director make attempts to verify the corporation's bank
-                        accounts to ensure that the
-                        remittances were made ?</div>
+                    <div style="width: 600px;">2. Were there any limitations on the director’s language abilities
+                        (Whether or Oral or Written) that significantly interfered with his or her ability to ensure
+                        that the corporation fulfilled its remittance obligations?</div>
                     <br>
                     <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
                     <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
                 </div>
                 <div class="form-group" style="margin-bottom: 50px;">
-                    <div style="width: 600px;">3.4. Did the Director make attempts to verify the corporation's bank
-                        accounts to ensure that the
-                        remittances were made ?</div>
+                    <div style="width: 600px;">3. Did the director have work experience?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>In accounting, finance, or
+                            tax</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>In a supervisory or managerial
+                            capacity</span></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Owning or operating a business</span>
+                    </div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>As a director on another corporate
+                            board</span></div>
+                </div>
+                <div class="form-group">
+                    <div style="width: 600px;">4. Is the corporation either a public company or a reporting issuer?
+                    </div>
                     <br>
                     <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group">
+                    <div style="width: 600px;">5. What is the size of the corporation?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Small (fewer than 10
+                            employees)</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Medium (10-100 employees)</span></div>
+                </div>
+                <div class="form-group">
+                    <div style="width: 600px;">6. Was the director suffering from a medically diagnosed condition that
+                        negatively affected his/her ability to function as a director during the time the remittance
+                        failure occurred?
+                    </div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Small (fewer than 10
+                            employees)</span><br></div>
                     <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
                 </div>
             </form>
@@ -96,25 +127,52 @@
         <div class="container content_container">
             <form action="" class="form-control" style="background: whitesmoke;">
                 <div class="form-group">
-                    <div style="width: 600px;">3.4. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam
-                        harum nulla illum sit aut qui, earum adipisci rem expedita quia vero numquam tempora esse!
-                        Tempora excepturi repellat harum architecto quaerat.</div>
+                    <div style="width: 600px;">1. Was the director the sole director of the corporation?</div>
                     <br>
                     <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
                     <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
                 </div>
                 <div class="form-group">
-                    <div style="width: 600px;">3.4. Did the Director make attempts to verify the corporation's bank
-                        accounts to ensure that the
-                        remittances were made ?</div>
+                    <div style="width: 600px;">2. Was the director a direct or indirect shareholder of the corporation?
+                    </div>
                     <br>
                     <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
                     <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
                 </div>
                 <div class="form-group" style="margin-bottom: 50px;">
-                    <div style="width: 600px;">3.4. Did the Director make attempts to verify the corporation's bank
-                        accounts to ensure that the
-                        remittances were made ?</div>
+                    <div style="width: 600px;">3. Was the Director actively involved in the day-to-day management of the
+                        corporation’s management?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">4. Did the director have authority to sign cheques or otherwise make
+                        payments on behalf of the corporation?
+                    </div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">5. Was the director actively involved with the remittance obligation
+                        prior to the remittance failure?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">6. Were there circumstances outside of the control of the director that
+                        made
+                        it impossible for the director to fulfil the remittance obligation?
+                    </div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">7. Did the remittance failure occur or persist as a result of reliance on
+                        incorrect information from someone other than the director?</div>
                     <br>
                     <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
                     <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
@@ -134,6 +192,203 @@
         </div>
     </div>
 
-    <script src="./scripts/script.js"></script>
+    <div id="content" class="modal3">
+        <div class="container content_container">
+            <form action="" class="form-control" style="background: whitesmoke;">
+                <div class="form-group">
+                    <div style="width: 600px;">1. Prior to the remittance failure, did the director receive any
+                        indications that the corporation was experiencing financial hardship?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group">
+                    <div style="width: 600px;">2. Prior to the remittance failure, did the corporation have any failures
+                        relating to taxes or the Canada Revenue Agency?
+                    </div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">3. Did the director make inquiries to another person tasked with the
+                        responsibility for remittance obligations?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">4. Did the director make inquiries to another person tasked with the
+                        responsibility for remittance obligations?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">5. Did the director establish a separate bank account for withholdings
+                        from employees and tax remittances or enact other, similar protocols intended to prevent tax
+                        related failures?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">6. Prior to the remittance failure, was the director involved in
+                        assigning the corporation’s tax compliance duties to another person?
+                    </div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Yes</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>No</span></div>
+                </div>
+            </form>
+            <div class="left_btn2 arrow_left_btn">
+                <div class="left_bg">
+                    <img src="./img/left-arrow.png" alt="">
+                </div>
+            </div>
+
+            <div class="right_btn2 arrow_right_btn">
+                <div class="left_bg">
+                    <img src="./img/right-arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="modal4">
+        <div class="container content_container">
+            <form action="" class="form-control" style="background: whitesmoke;">
+                <div class="form-group">
+                    <div style="width: 600px;">1. Did the director:</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Bring the relevant tax obligations to
+                            the attention of others </span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Make arrangements with the CRA
+                            regarding the relevant tax obligations</span></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Personally, contribute funds to aid
+                            the corporation in coping with financial hardship</span></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>Change or restructure business
+                            operations to address the relevant tax obligations </span></div>
+                </div>
+                <div class="form-group">
+                    <div style="width: 600px;">2. For how many months did the corporation fail to remit?
+                    </div>
+                    <br>
+                    <div class="bg_white"><input type="text" name="" id="text_input"><br></div>
+                </div>
+                <div class="form-group" style="margin-bottom: 50px;">
+                    <div style="width: 600px;">3. What was the total dollar amount of the remittance failures?</div>
+                    <br>
+                    <div class="bg_white"><input type="text" name="" id="text_input"><br></div>
+                </div>
+            </form>
+            <div class="left_btn2 arrow_left_btn">
+                <div class="left_bg">
+                    <img src="./img/left-arrow.png" alt="">
+                </div>
+            </div>
+
+            <div class="right_btn2 arrow_right_btn">
+                <div class="left_bg">
+                    <img src="./img/right-arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="modal5">
+        <div class="container content_container">
+            <form action="" class="form-control" style="background: whitesmoke;">
+                <div class="form-group">
+                    <div style="width: 600px;">1. Under which legislation did the corporation fail to remit?</div>
+                    <br>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>ITA</span><br></div>
+                    <div class="bg_white"><input type="radio" name="" id=""><span>ETA</span></div>
+                </div>
+            </form>
+            <div class="left_btn2 arrow_left_btn">
+                <div class="left_bg">
+                    <img src="./img/left-arrow.png" alt="">
+                </div>
+            </div>
+
+            <div class="right_btn2 arrow_right_btn">
+                <div class="left_bg">
+                    <img src="./img/right-arrow.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="content" class="modal6">
+        <div class="container content_container">
+            <div class="result_head">
+                <h1 class="display-6 text-danger">Director’s Liability is Limited</h1>
+            </div>
+            <div class="pie_chart_display">
+                <div id="piechart"></div>
+            </div>
+            <table id="mytable" class="table table-striped">
+                <thead>
+                    <tr>
+                        <td>Case Name</td>
+                        <td>Court/Tribunal</td>
+                        <td>Date</td>
+                        <td>Verdict</td>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>3</td>
+                        <td>4</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="//cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.min.js"
+  integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+  crossorigin="anonymous"></script>
+  <script src="./scripts/index.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <script type="text/javascript">
+    // Load google charts
+    google.charts.load('current', {'packages':['corechart']});
+    google.charts.setOnLoadCallback(drawChart);
+    
+    // Draw the chart and set the chart values
+    function drawChart() {
+      var data = google.visualization.arrayToDataTable([
+      ['Task', 'Hours per Day'],
+      ['Positive', 80],
+      ['Negative', 20],
+    ]);
+    
+      // Optional; add a title and set the width and height of the chart
+      var options = {'title':'Verdict', 'width':400, 'height':290,'backgroundColor': 'whitesmoke'};
+    
+      // Display the chart inside the <div> element with id="piechart"
+      var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+      chart.draw(data, options);
+    }
+    </script>
 </body>
+
 </html>
